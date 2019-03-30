@@ -1,0 +1,58 @@
+﻿@model AjaxSinhvien.Models.SINHVIEN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SINHVIEN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DANTOC.TENDT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DANTOC.TENDT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LOP.TENLOP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LOP.TENLOP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TENSV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TENSV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NGAYSINH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NGAYSINH)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QUEQUAN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QUEQUAN)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
